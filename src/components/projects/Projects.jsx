@@ -1,10 +1,10 @@
-import "./projectList.css";
-import taskMaster from "../../img/taskMaster.png";
+import "./projects.css";
+import taskMaster from "../../img/AdminPage.png";
 import citrus from "../../img/citrus.png";
 import restRant from "../../img/restRant.png";
 import planeBomber from "../../img/planeBomber.png";
 
-const ProjectList = () => {
+const Projects = () => {
   return (
     <div className="pl">
       <div className="pl-text">
@@ -14,6 +14,7 @@ const ProjectList = () => {
         </p>
       </div>
       <div className="pl-list">
+        
         <div className="p">
           <div className="p-browser">
             <div className="p-circle"></div>
@@ -28,6 +29,7 @@ const ProjectList = () => {
             <img src={taskMaster} alt="" className="p-img" />
           </a>
         </div>
+         
         <div className="p">
           <div className="p-browser">
             <div className="p-circle"></div>
@@ -75,4 +77,4 @@ const ProjectList = () => {
   );
 };
 
-export default ProjectList;
+export default Projects;

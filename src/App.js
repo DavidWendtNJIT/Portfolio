@@ -1,13 +1,13 @@
 import About from "./components/about/About";
 import Intro from "./components/intro/Intro";
-import ProjectList from "./components/projectList/ProjectList";
+import Projects from "./components/projects/Projects";
 
 function App() {
   return (
     <div>
       <Intro/>
       <About/>
-      <ProjectList/>
+      <Projects/>
     </div>
   );
 }
