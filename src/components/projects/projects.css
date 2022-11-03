@@ -27,12 +27,19 @@
 }
 
 .p {
+  display: flex;
+  flex-direction: column;
   width: 45%;
-  height: 40vh;
+  margin-bottom: 3em;
+}
+
+.p-wrapper {
+  position: relative;
+  height: auto;
   margin: 20px 10px;
   border: 2px solid #c0c0c0;
   border-radius: 10px 10px 0px 0px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .p-browser {
@@ -53,3 +60,68 @@
 .p-img {
   width: 100%;
 }
+
+.p:hover {
+}
+
+.p-title {
+  font-size: 2em;
+  color: #d20101;
+  margin-top: 10%;
+  margin-bottom: 1em;
+}
+
+.p-stack {
+
+}
+
+.p-desc {
+  padding: 1em 3em;
+}
+
+.p-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgba(0, 0, 0, 0.80);
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+}
+
+.p:hover .p-info {
+  opacity: 1;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.icon:hover {
+  background-color: #d20101;
+  transform: scale(1.2);
+}
+
