@@ -1,7 +1,5 @@
-import "./intro.css"
+import "./intro.scss"
 import mainPicture from "../../img/portfolio_solo_bw_resized.png"
-import mainPictureAlt from "../../img/portfolio_picture_cutout_bw.png";
-
 
 const Intro = () => {
   return (

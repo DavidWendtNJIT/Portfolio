@@ -1,6 +1,6 @@
 .intro {
   display: flex;
-  height: 100vh;
+  // overflow-y: hidden;
 }
 
 .i-left {
@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
 }
 
 .i-right {
@@ -39,7 +40,7 @@
 }
 
 .i-title-wrapper {
-  height: 100%;
+  // height: 100%;
   animation: move 8s ease-in-out infinite alternate;
 }
 

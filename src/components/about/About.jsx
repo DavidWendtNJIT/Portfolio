@@ -1,4 +1,4 @@
-import "./about.css";
+import "./about.scss";
 import me from "../../img/me_coding_bw.png";
 
 const About = () => {

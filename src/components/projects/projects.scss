@@ -1,5 +1,6 @@
 .pl {
-  padding: 50px 100px;
+  // height: 100vh;
+  padding: 20px 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +37,7 @@
 .p-wrapper {
   position: relative;
   height: auto;
-  margin: 20px 10px;
+  margin: 10px 10px;
   border: 2px solid #c0c0c0;
   border-radius: 10px 10px 0px 0px;
   /* overflow: hidden; */
@@ -61,18 +62,17 @@
   width: 100%;
 }
 
-.p:hover {
-}
-
 .p-title {
   font-size: 2em;
   color: #d20101;
-  margin-top: 10%;
+  margin-top: 8%;
   margin-bottom: 1em;
-}
 
-.p-stack {
-
+  span {
+    background-color: white;
+    padding: 2px 15px;
+    border-radius: 20px;
+  }
 }
 
 .p-desc {
@@ -113,6 +113,7 @@
   display: flex;
   margin: 10px;
   transition: all 0.5s ease;
+  // overflow: hidden;
 }
 
 a {
@@ -122,6 +123,6 @@ a {
 
 .icon:hover {
   background-color: #d20101;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 

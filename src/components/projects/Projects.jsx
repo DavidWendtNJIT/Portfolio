@@ -1,4 +1,4 @@
-import "./projects.css";
+import "./projects.scss";
 import taskMaster from "../../img/AdminPage.png";
 import citrus from "../../img/citrus.png";
 import restRant from "../../img/restRant.png";
@@ -25,7 +25,7 @@ const Projects = () => {
             </div>
             <img src={taskMaster} alt="" className="p-img" />
             <div className="p-info">
-              <h2 className="p-title">TaskMaster</h2>
+              <h2 className="p-title"><span>TaskMaster</span></h2>
               <h4 className="p-stack">React, Node.js, Express, Mongo</h4>
               <h5 className="p-desc">
                 This web application allows employers to track and assign tasks
@@ -66,7 +66,7 @@ const Projects = () => {
             </div>
             <img src={citrus} alt="" className="p-img" />
             <div className="p-info">
-              <h2 className="p-title">Citrus Property Management</h2>
+              <h2 className="p-title"><span>Citrus Property Management</span></h2>
               <h4 className="p-stack">React, Node.js, Express, Mongo</h4>
               <h5 className="p-desc">
                 This browser application allows users like landlords/realtors to
@@ -106,7 +106,7 @@ const Projects = () => {
             </div>
             <img src={restRant} alt="" className="p-img" />
             <div className="p-info">
-              <h2 className="p-title">REST-Rant</h2>
+              <h2 className="p-title"><span>REST-Rant</span></h2>
               <h4 className="p-stack">
                 React (SSR), Node.js, Express, PostgreSQL
               </h4>
@@ -147,8 +147,8 @@ const Projects = () => {
             </div>
             <img src={planeBomber} alt="" className="p-img" />
             <div className="p-info">
-              <h2 className="p-title">Plane Bomber</h2>
-              <h4 className="p-stack">Vanilla Javascript, OOP</h4>
+              <h2 className="p-title"><span>Plane Bomber</span></h2>
+              <h4 className="p-stack">Vanilla Javascript</h4>
               <h5 className="p-desc">
                 Destroy 10 targets as quickly as possible with the least amount
                 of bombs dropped to achieve your highest score possible!
