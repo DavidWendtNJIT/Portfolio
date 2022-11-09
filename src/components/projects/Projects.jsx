@@ -8,7 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Projects = () => {
   return (
-    <div className="pl">
+    <div className="pl" id="projects">
       <div className="pl-text">
         <h1 className="pl-title">Projects</h1>
         <p className="pl-desc">

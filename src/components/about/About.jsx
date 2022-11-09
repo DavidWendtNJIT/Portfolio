@@ -3,7 +3,7 @@ import me from "../../img/me_coding_bw.png";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="a-left">
         <div className="a-card bg"></div>
         <div className="a-card">

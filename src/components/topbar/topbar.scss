@@ -74,6 +74,10 @@
     background-color: $mainColor;
     color: $secondaryColor;
 
+      .left .itemContainer .icon {
+        background-color: $mainColor;
+      }
+
     .hamburger {
       span {
         &:first-child {

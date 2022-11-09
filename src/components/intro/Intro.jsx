@@ -3,7 +3,7 @@ import mainPicture from "../../img/portfolio_solo_bw_resized.png"
 
 const Intro = () => {
   return (
-    <div className="intro">
+    <div className="intro" id="intro">
       <div className="i-left">
         <div className="i-left-wrapper">
           <h1 className="i-intro">Hello, my name is</h1>
