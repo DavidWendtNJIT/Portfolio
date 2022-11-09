@@ -1,7 +1,26 @@
 import "./intro.scss"
+import { init } from "ityped"
 import mainPicture from "../../img/portfolio_solo_bw_resized.png"
+import { useEffect, useRef } from "react"
 
 const Intro = () => {
+
+  const textRef = useRef();
+
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      backDelay: 1500,
+      backSpeed: 60,
+      strings: [
+        'Full Stack Software Developer',
+        'UI/UX Designer',
+        'Loving Father',
+        'Major Computer Nerd',
+      ],
+    });
+  }, []);
+
   return (
     <div className="intro" id="intro">
       <div className="i-left">
@@ -9,12 +28,7 @@ const Intro = () => {
           <h1 className="i-intro">Hello, my name is</h1>
           <h2 className="i-name">David Wendt</h2>
           <div className="i-title">
-            <div className="i-title-wrapper">
-              <div className="i-title-item">Full Stack Software Developer</div>
-              <div className="i-title-item">UI/UX Designer</div>
-              <div className="i-title-item">Loving Father</div>
-              <div className="i-title-item">Major Computer Nerd</div>
-            </div>
+            <span className="i-title-item" ref={textRef}></span>
           </div>
           <p className="i-desc">
             I am a detail oriented software developer focusing on finding

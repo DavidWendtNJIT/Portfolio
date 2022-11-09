@@ -12,7 +12,7 @@ const Projects = () => {
       <div className="pl-text">
         <h1 className="pl-title">Projects</h1>
         <p className="pl-desc">
-          These are some of the projects that I have worked on thus far.
+          These are some of the projects that I have worked on thus far. The list will be continually growing and growing...
         </p>
       </div>
       <div className="pl-list">
