@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .intro {
   display: flex;
   // overflow-y: hidden;
@@ -81,8 +83,23 @@
 }
 
 .i-desc {
-  margin-top: 40px;
+  margin: 40px 0px;
   font-size: 1.3em;
+}
+
+.i-links {
+  display: flex;
+
+  .i-logo {
+    width: 40px;
+    padding: 0px 10px 0px 0px;
+
+    &:hover{
+    color: $mainColor;
+    transform: scale(1.2);
+    filter: invert(9%) sepia(89%) saturate(7071%) hue-rotate(16deg) brightness(92%) contrast(120%);
+    }
+  }
 }
 
 .i-img{

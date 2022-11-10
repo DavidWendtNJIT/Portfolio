@@ -126,7 +126,7 @@ const Skills = () => {
         <div className="right">
           <div className="right-wrapper">
             <div className="right-title">
-                <h1>NJIT Certification</h1>
+                <p>NJIT Certification</p>
             </div>
             <img src={njitcert} alt="certification" className="right-img" />
           </div>

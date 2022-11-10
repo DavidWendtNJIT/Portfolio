@@ -1,6 +1,10 @@
 import "./intro.scss"
 import { init } from "ityped"
 import mainPicture from "../../img/portfolio_solo_bw_resized.png"
+import linkedin from "../../img/linkedin.png"
+import github from "../../img/github.png";
+import facebook from "../../img/facebook.png";
+import twitter from "../../img/twitter.png";
 import { useEffect, useRef } from "react"
 
 const Intro = () => {
@@ -34,6 +38,20 @@ const Intro = () => {
             I am a detail oriented software developer focusing on finding
             elegant solutions to technical problems.
           </p>
+          <div className="i-links">
+            <a href="https://www.linkedin.com/in/david-wendt" target="_blank">
+              <img src={linkedin} alt="LinkedIn" className="i-logo" />
+            </a>
+            <a href="https://www.github.com/davidwendtNJIT" target="_blank">
+              <img src={github} alt="GitHub" className="i-logo" />
+            </a>
+            <a href="https://www.facebook.com/dave.wendt.1" target="_blank">
+              <img src={facebook} alt="Facebook" className="i-logo" />
+            </a>
+            <a href="https://twitter.com/dave_wendt24" target="_blank">
+              <img src={twitter} alt="Twitter" className="i-logo" />
+            </a>
+          </div>
         </div>
         <svg
           width="75"
