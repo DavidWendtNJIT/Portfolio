@@ -6,6 +6,7 @@ import Projects from "./components/projects/Projects";
 import Topbar from "./components/topbar/Topbar";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
+import Skills from "./components/skills/Skills";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,10 +18,11 @@ const App = () => {
         <Intro />
         <About />
         <Projects />
+        <Skills />
         <Contact />
       </div>
     </div>
   );
-}
+};
 
 export default App;
