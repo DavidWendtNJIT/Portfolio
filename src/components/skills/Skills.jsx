@@ -1,9 +1,9 @@
 import "./skills.scss";
-import javascript from "../../img/javascript.png";
+// import javascript from "../../img/javascript.png";
 import react from "../../img/react.png";
 import typescript from "../../img/typescript.png";
 import nodejs from "../../img/nodejs.png";
-import python from "../../img/python.jpg";
+import python from "../../img/python.png";
 import mongodb from "../../img/mongodb.png";
 import html5 from "../../img/html5.png";
 import css3 from "../../img/css3.png";
@@ -22,7 +22,7 @@ const Skills = () => {
   const tech = [
     {
       id: 1,
-      src: javascript,
+      src: "/assets/img/javascript.png",
       title: "JavaScript",
     },
     {
@@ -106,12 +106,12 @@ const Skills = () => {
     <div id="skills" className="container">
       <div className="wrapper">
         <div className="left">
-        <div>
-          <p className="title">Skills</p>
-          <p className="subtitle">
-            These are the technologies that I've worked with
-          </p>
-        </div>
+          <div>
+            <p className="title">Skills</p>
+            <p className="subtitle">
+              These are the technologies that I've worked with
+            </p>
+          </div>
           <div className="left-wrapper">
             <div className="cards">
               {tech.map(({ id, src, title }) => (
@@ -126,9 +126,14 @@ const Skills = () => {
         <div className="right">
           <div className="right-wrapper">
             <div className="right-title">
-                <p>NJIT Certification</p>
+              <p>NJIT Certification</p>
             </div>
             <img src={njitcert} alt="certification" className="right-img" />
+            <div className="resume">
+              <a href="/assets/files/resume.pdf" target="_blank" rel="noreferrer">
+                <button>View Resume</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
