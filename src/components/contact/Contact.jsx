@@ -1,7 +1,6 @@
 import { useState, useRef } from "react";
 import "./contact.scss";
 import emailjs from "@emailjs/browser";
-import handshake from "../../img/shake.svg";
 
 const Contact = () => {
   const [message, setMessage] = useState(false);
@@ -32,7 +31,7 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src={handshake} alt="handshake" />
+        <img src="/assets/img/shake.svg" alt="handshake" />
       </div>
       <div className="right">
         <h2>Contact Me</h2>

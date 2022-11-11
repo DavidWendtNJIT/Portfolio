@@ -35,20 +35,21 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      // padding-right: 5%;
 
       .cards {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        padding: 40px 15px 15px 15px;
+        padding: 20px 15px 15px 15px;
         text-align: center;
         
         .card {
           display: flex;
           flex-direction: column;
           margin: 10px;
+                  width: 150px;
+                    height: 150px;
         }
         .card-title {
           font-size: 1.5em;

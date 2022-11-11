@@ -1,8 +1,4 @@
 import "./projects.scss";
-import taskMaster from "../../img/AdminPage.png";
-import citrus from "../../img/citrus.png";
-import restRant from "../../img/restRant.png";
-import planeBomber from "../../img/planeBomber.png";
 import LanguageIcon from "@mui/icons-material/Language";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -23,7 +19,7 @@ const Projects = () => {
               <div className="p-circle"></div>
               <div className="p-circle"></div>
             </div>
-            <img src={taskMaster} alt="" className="p-img" />
+            <img src="/assets/img/taskmaster.png" alt="" className="p-img" />
             <div className="p-info">
               <h2 className="p-title"><span>TaskMaster</span></h2>
               <h4 className="p-stack">React, Node.js, Express, Mongo</h4>
@@ -64,7 +60,7 @@ const Projects = () => {
               <div className="p-circle"></div>
               <div className="p-circle"></div>
             </div>
-            <img src={citrus} alt="" className="p-img" />
+            <img src="/assets/img/citrus.png" alt="" className="p-img" />
             <div className="p-info">
               <h2 className="p-title"><span>Citrus Property Management</span></h2>
               <h4 className="p-stack">React, Node.js, Express, Mongo</h4>
@@ -104,7 +100,7 @@ const Projects = () => {
               <div className="p-circle"></div>
               <div className="p-circle"></div>
             </div>
-            <img src={restRant} alt="" className="p-img" />
+            <img src="/assets/img/restRant.png" alt="" className="p-img" />
             <div className="p-info">
               <h2 className="p-title"><span>REST-Rant</span></h2>
               <h4 className="p-stack">
@@ -145,7 +141,7 @@ const Projects = () => {
               <div className="p-circle"></div>
               <div className="p-circle"></div>
             </div>
-            <img src={planeBomber} alt="" className="p-img" />
+            <img src="/assets/img/planeBomber.png" alt="" className="p-img" />
             <div className="p-info">
               <h2 className="p-title"><span>Plane Bomber</span></h2>
               <h4 className="p-stack">Vanilla Javascript</h4>

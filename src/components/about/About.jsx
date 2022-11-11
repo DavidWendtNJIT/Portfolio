@@ -1,5 +1,4 @@
 import "./about.scss";
-import me from "../../img/me_coding_bw.png";
 
 const About = () => {
   return (
@@ -7,7 +6,7 @@ const About = () => {
       <div className="a-left">
         <div className="a-card bg"></div>
         <div className="a-card">
-          <img src={me} alt="David" className="a-img" />
+          <img src="/assets/img/me_coding_bw.png" alt="David" className="a-img" />
         </div>
       </div>
       <div className="a-right">
@@ -17,7 +16,7 @@ const About = () => {
             <em>
               “The function of good software is to make the complex appear to be
               simple”
-            </em>{" "}
+            </em>{"   "}
             -Grady Booch.
           </p>
           <p className="a-desc">
