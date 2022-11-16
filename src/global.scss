@@ -2,31 +2,31 @@ $mainColor: #d20101;
 $secondaryColor: #e4e4e4;
 
 @mixin for-size($size) {
-  @if $size ==phone {
+  @if $size == phone {
     @media (max-width: 599px) {
       @content;
     }
   }
 
-  @else if $size ==tablet-portrait {
+  @else if $size == tablet-portrait {
     @media (min-width: 600px) {
       @content;
     }
   }
 
-  @else if $size ==tablet-landscape {
+  @else if $size == tablet-landscape {
     @media (min-width: 900px) {
       @content;
     }
   }
 
-  @else if $size ==desktop {
+  @else if $size == desktop {
     @media (min-width: 1200px) {
       @content;
     }
   }
 
-  @else if $size ==big-desktop {
+  @else if $size == big-desktop {
     @media (min-width: 2000px) {
       @content;
     }

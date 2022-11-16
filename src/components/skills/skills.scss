@@ -34,7 +34,7 @@
       }
 
       @include for-size(phone) {
-          font-size: 2em;;
+          font-size: 1.8em;;
         }
 
       @include for-size(big-desktop) {
@@ -160,7 +160,7 @@
 
           @include for-size(phone) {
               // display: none;
-              font-size: 2em;
+              font-size: 1.7em;
               margin-bottom: 4%;
             }
 

@@ -11,6 +11,7 @@ const Projects = () => {
           These are some of the projects that I have worked on thus far. The
           list will be continually growing and growing...
         </p>
+        <h5 className="pl-mobiledesc">Click a screen for details</h5>
       </div>
       <div className="pl-list">
         <div className="p">
@@ -173,7 +174,6 @@ const Projects = () => {
                     href="https://github.com/DavidWendtNJIT/Plane-Bomber-game"
                     target="_blank"
                     rel="noreferrer"
-                    
                   >
                     <GitHubIcon className="actual-icon" />
                   </a>

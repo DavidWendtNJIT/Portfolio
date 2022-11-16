@@ -29,7 +29,7 @@
 
   @include for-size(phone) {
       font-size: 2em;
-      margin-bottom: 5%;
+      // margin-bottom: 0%;
     }
 
   @include for-size(big-desktop) {
@@ -43,6 +43,14 @@
   @include for-size(phone) {
       display: none;
     }
+}
+
+.pl-mobiledesc {
+  display: none;
+
+  @include for-size(phone) {
+    display: block;
+  }
 }
 
 .pl-list {
@@ -67,7 +75,7 @@
 
   @include for-size(phone) {
     // width: 50%;
-    height: 20vh;
+    height: 17vh;
     margin-bottom: 0em;
   }
 }
