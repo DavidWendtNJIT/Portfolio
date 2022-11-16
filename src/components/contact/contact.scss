@@ -4,7 +4,7 @@
   background-color: $mainColor;
   display: flex;
 
-  @include mobile {
+  @include for-size(phone) {
     flex-direction: column;
   }
 
@@ -28,7 +28,13 @@
       font-size: 3em;
       color: white;
       margin-bottom: 30px;
+
+      @include for-size(big-desktop) {
+          font-size: 5em;
+        }
     }
+
+    
 
     form {
       width: 70%;
@@ -41,28 +47,43 @@
       input {
         width: 300px;
         height: 30px;
-        font-size: 14px;
+        font-size: 1em;
         margin-bottom: 40px;
-        border-radius: 20px;
+        border-radius: 10px;
         padding: 10px;
 
-        @include mobile {
+        @include for-size(phone) {
           width: 200px;
           height: 20px;
+          margin-bottom: 10px;
+        }
+
+        @include for-size(big-desktop) {
+          width:350px;
+          height: 25px;
+          font-size: 1.3em;
         }
       }
 
       textarea {
         width: 300px;
         height: 200px;
-        font-size: 14px;
+        font-size: 1em;
         margin-bottom: 40px;
-        border-radius: 20px;
+        border-radius: 10px;
+        border: 2px solid black;
         padding: 10px;
 
-        @include mobile {
+        @include for-size(phone) {
           width: 200px;
-          height: 100px;
+          height: 200px;
+          margin-bottom: 10px;
+        }
+
+        @include for-size(big-desktop) {
+          width: 350px;
+          height: 400px;
+          font-size: 1.3em;
         }
       }
 
@@ -83,6 +104,15 @@
 
         &:hover {
           color: $mainColor;
+        }
+
+        @include for-size(phone) {
+          margin-bottom: 10px;
+        }
+
+        @include for-size(big-desktop) {
+          font-size: 2em;
+          padding: 10px 70px;
         }
       }
 

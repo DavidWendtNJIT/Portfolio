@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import "./menu.scss";
 
 const Menu = ({ menuOpen, setMenuOpen }) => {
@@ -9,7 +8,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
           <a href="#intro">Home</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#about">About Me</a>
+          <a href="#about">About</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <a href="#projects">Projects</a>

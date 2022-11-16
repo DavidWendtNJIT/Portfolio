@@ -3,6 +3,10 @@
 .intro {
   display: flex;
   // overflow-y: hidden;
+
+  @include for-size(phone) {
+      flex-direction: column;
+    }
 }
 
 .i-left {
@@ -25,44 +29,40 @@
   flex-direction: column;
   justify-content: center;
 
+  @include for-size(phone) {
+      padding: 10px 25px;
+      align-items: center;
+      text-align: center;
+    }
+
 }
 
 .i-intro {
   font-size: 2em;
   font-weight: 300;
+
+  @include for-size(phone) {
+      font-size: 1.2em;
+    }
 }
 
 .i-name {
   font-size: 4em;
+
+  @include for-size(phone) {
+      font-size: 2.8em;
+    }
 }
-
-// .i-title {
-//   height: 50px;
-//   // overflow: hidden;
-// }
-
-// .i-title-wrapper {
-//   // height: 100%;
-//   animation: move 8s ease-in-out infinite alternate;
-// }
-
-// @keyframes move {
-//   33.3%{
-//     transform: translateY(-50px);
-//   }
-//   66.6%{
-//     transform: translateY(-100px);
-//   }
-//   100%{
-//     transform: translateY(-150px);
-//   }
-// }
 
 .i-title-item {
   // height: 50px;
   font-size: 30px;
   font-weight: bold;
   color: #d20101;
+
+  @include for-size(phone) {
+      font-size: 1.2em;
+    }
   // display: flex;
   // align-items: center;
 }
@@ -70,6 +70,10 @@
 .ityped-cursor {
   animation: blink 1s infinite;
   font-size: 30px;
+
+  @include for-size(phone) {
+      font-size: 1.3em;
+    }
 }
 
 @keyframes blink {
@@ -85,6 +89,10 @@
 .i-desc {
   margin: 40px 0px;
   font-size: 1.3em;
+
+  @include for-size(phone) {
+      font-size: 1em;
+    }
 }
 
 .i-links {
@@ -93,6 +101,11 @@
   .i-logo {
     width: 40px;
     padding: 0px 10px 0px 0px;
+
+    @include for-size(phone) {
+      width: 30px;
+      padding: 0px 20px 0px 0px;
+    }
 
     &:hover{
     color: $mainColor;

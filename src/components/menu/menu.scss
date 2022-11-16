@@ -14,6 +14,10 @@
   justify-content: center;
   transition: all 1s ease;
 
+  @include for-size(phone) {
+    width: 50%;
+  }
+
   &.active {
     right: 0;
   }

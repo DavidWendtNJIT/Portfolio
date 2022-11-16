@@ -6,27 +6,52 @@
   .wrapper {
     padding: 10px 20px;
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
     color: white;
+
+    @include for-size(phone) {
+        flex-direction: column;
+        padding: 5px;
+      }
 
 
     .title {
       font-size: 3em;
       font-weight: 600;
       color: $mainColor;
-      // padding: 10px;
-      
-      // display: inline;
+      margin-bottom: 4%;
+
+      span {
+        background-color: white;
+        padding: 2px 45px;
+        border-radius: 40px;
+
+        @include for-size(phone) {
+            padding: 2px 25px;
+          }
+      }
+
+      @include for-size(phone) {
+          font-size: 2em;;
+        }
+
+      @include for-size(big-desktop) {
+        font-size: 4em;
+      }
     }
 
-    .subtitle {
-      padding: 10px 0px;
-      font-size: 1.5em;
-      color: black;
-    }
+    // .subtitle {
+    //   padding: 10px 0px;
+    //   font-size: 1.5em;
+    //   color: black;
+
+    //   @include for-size(phone) {
+    //       padding: 5px 0px;
+    //       font-size: 0.8em;
+    //     }
+    // }
 
     .left {
       flex: 1;
@@ -41,26 +66,60 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        padding: 20px 15px 15px 15px;
+        // padding: 20px 15px 15px 15px;
         text-align: center;
+
+        @include for-size(phone) {
+            padding: 0px;
+          }
         
         .card {
           display: flex;
           flex-direction: column;
           margin: 10px;
-                  width: 150px;
-                    height: 150px;
+          width: 150px;
+          height: 150px;
+
+          @include for-size(phone) {
+              width: 50px;
+              height: 50px;
+              // margin: 5px;
+            }
+
+          @include for-size(big-desktop) {
+            font-size: 1.5em;
+            width: 225px;
+            height: 225px;
+          }
         }
+
         .card-title {
           font-size: 1.5em;
           font-weight: 500;
           padding: 10px;
+          // margin: auto;
+          
+
+          @include for-size(phone) {
+              font-size: 0.7em;
+              padding: 5px 0px;
+            }
         }
         
         .img {
           width: 100px;
           height: 100px;
-          margin: 0 auto;
+          margin: auto;
+
+          @include for-size(phone) {
+              width: 35px;
+              height: 35px;
+            }
+
+          @include for-size(big-desktop) {
+            width: 150px;
+            height: 150px; 
+          }
         }
       }
     }
@@ -68,48 +127,92 @@
     .right {
       flex: 1;
       display: flex;
+      height: 100%;
       align-items: center;
       flex-direction: column;
       justify-content: center;
       // padding-left: 5%;
       text-align: center;
 
+      @include for-size(phone) {
+          justify-content: start;
+        }
+
       .right-wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
         
         .right-title {
           font-size: 3em;
           font-weight: 600;
           color: $mainColor;
+
+          span {
+            background-color: white;
+            padding: 2px 45px;
+            border-radius: 40px;
+
+            @include for-size(phone) {
+              padding: 2px 25px;
+            }
+          }
+
+          @include for-size(phone) {
+              // display: none;
+              font-size: 2em;
+              margin-bottom: 4%;
+            }
+
+          @include for-size(big-desktop) {
+            font-size: 4em;
+          }
         }
         
         .right-img {
           width: 800px;
+          margin: 5% 0 10% 0;
+
+          @include for-size(phone) {
+            width: 95vw;
+            margin: 0 0 5% 0;
+          }
+
+          @include for-size(big-desktop) {
+            width: 90%;            
+          }
         }
 
         .resume {
-          margin-top: 50px;
+          // margin-top: 50px;
+          align-items: center;
+          justify-content: center;
 
-                button {
-                    margin-bottom: 20px;
-                    color: white;
-                    background-color: $mainColor;
-                    border: none;
-                    border-radius: 10px;
-                    font-size: 2em;
-                    font-weight: 600;
-                    padding: 10px 150px;
-                    cursor: pointer;
-                
-                    &:focus {
-                      outline: none;
-                    }
-                
-                    &:hover {
-                      color: black;
-                    }
-                  }
+          button {
+            margin-bottom: 20px;
+            color: white;
+            background-color: $mainColor;
+            border: none;
+            border-radius: 10px;
+            font-size: 2em;
+            font-weight: 600;
+            padding: 10px 150px;
+            cursor: pointer;
+        
+            &:focus {
+              outline: none;
+            }
+        
+            &:hover {
+              color: black;
+            }
+
+            @include for-size(phone) {
+              margin-bottom: 0px;
+              font-size: 1.2em;
+              padding: 10px 75px;
+            }
+          }
         }
       }
     }

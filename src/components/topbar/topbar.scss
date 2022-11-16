@@ -16,6 +16,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @include for-size(phone) {
+        align-items: center;
+      }
+
     .left {
       display: flex;
       align-items: center;
@@ -26,6 +30,11 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+        align-items: center;
+
+        @include for-size(phone) {
+            font-size: 30px;
+          }
       }
 
       .itemContainer {
@@ -39,7 +48,7 @@
           color: $mainColor;
         }
 
-        @include mobile {
+        @include for-size(phone) {
           display: none;
         }
 

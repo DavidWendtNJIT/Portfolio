@@ -75,16 +75,11 @@ const Skills = () => {
     },
     {
       id: 15,
-      src: "/assets/img/styledcomponents.png",
-      title: "styled components",
-    },
-    {
-      id: 16,
       src: "/assets/img/vscode.png",
       title: "VS Code",
     },
     {
-      id: 17,
+      id: 16,
       src: "/assets/img/github.png",
       title: "Github",
     },
@@ -95,10 +90,10 @@ const Skills = () => {
       <div className="wrapper">
         <div className="left">
           <div>
-            <p className="title">Skills</p>
-            <p className="subtitle">
+            <h4 className="title"><span>Skills</span></h4>
+            {/* <p className="subtitle">
               These are the technologies that I've worked with
-            </p>
+            </p> */}
           </div>
           <div className="left-wrapper">
             <div className="cards">
@@ -113,12 +108,20 @@ const Skills = () => {
         </div>
         <div className="right">
           <div className="right-wrapper">
-            <div className="right-title">
-              <p>NJIT Certification</p>
+            <div>
+              <h4 className="right-title"><span>NJIT Certification</span></h4>
             </div>
-            <img src="/assets/img/njitcert.png" alt="certification" className="right-img" />
+            <img
+              src="/assets/img/njitcert.png"
+              alt="certification"
+              className="right-img"
+            />
             <div className="resume">
-              <a href="/assets/files/resume.pdf" target="_blank" rel="noreferrer">
+              <a
+                href="/assets/files/resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button>View Resume</button>
               </a>
             </div>

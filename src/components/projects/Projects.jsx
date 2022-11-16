@@ -8,7 +8,8 @@ const Projects = () => {
       <div className="pl-text">
         <h1 className="pl-title">Projects</h1>
         <p className="pl-desc">
-          These are some of the projects that I have worked on thus far. The list will be continually growing and growing...
+          These are some of the projects that I have worked on thus far. The
+          list will be continually growing and growing...
         </p>
       </div>
       <div className="pl-list">
@@ -21,7 +22,9 @@ const Projects = () => {
             </div>
             <img src="/assets/img/taskmaster.png" alt="" className="p-img" />
             <div className="p-info">
-              <h2 className="p-title"><span>TaskMaster</span></h2>
+              <h2 className="p-title">
+                <span>TaskMaster</span>
+              </h2>
               <h4 className="p-stack">React, Node.js, Express, Mongo</h4>
               <h5 className="p-desc">
                 This web application allows employers to track and assign tasks
@@ -36,7 +39,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <LanguageIcon fontSize="large" />
+                    <LanguageIcon className="actual-icon" />
                   </a>
                 </div>
                 <div className="icon">
@@ -45,7 +48,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <GitHubIcon fontSize="large" />
+                    <GitHubIcon className="actual-icon" />
                   </a>
                 </div>
               </div>
@@ -62,7 +65,9 @@ const Projects = () => {
             </div>
             <img src="/assets/img/citrus.png" alt="" className="p-img" />
             <div className="p-info">
-              <h2 className="p-title"><span>Citrus Property Management</span></h2>
+              <h2 className="p-title">
+                <span>Citrus Property Management</span>
+              </h2>
               <h4 className="p-stack">React, Node.js, Express, Mongo</h4>
               <h5 className="p-desc">
                 This browser application allows users like landlords/realtors to
@@ -76,7 +81,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <LanguageIcon fontSize="large" />
+                    <LanguageIcon className="actual-icon" />
                   </a>
                 </div>
                 <div className="icon">
@@ -85,7 +90,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <GitHubIcon fontSize="large" />
+                    <GitHubIcon className="actual-icon" />
                   </a>
                 </div>
               </div>
@@ -102,7 +107,9 @@ const Projects = () => {
             </div>
             <img src="/assets/img/restRant.png" alt="" className="p-img" />
             <div className="p-info">
-              <h2 className="p-title"><span>REST-Rant</span></h2>
+              <h2 className="p-title">
+                <span>REST-Rant</span>
+              </h2>
               <h4 className="p-stack">
                 React (SSR), Node.js, Express, PostgreSQL
               </h4>
@@ -117,7 +124,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <LanguageIcon fontSize="large" />
+                    <LanguageIcon className="actual-icon" />
                   </a>
                 </div>
                 <div className="icon">
@@ -126,7 +133,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <GitHubIcon fontSize="large" />
+                    <GitHubIcon className="actual-icon" />
                   </a>
                 </div>
               </div>
@@ -143,7 +150,9 @@ const Projects = () => {
             </div>
             <img src="/assets/img/planeBomber.png" alt="" className="p-img" />
             <div className="p-info">
-              <h2 className="p-title"><span>Plane Bomber</span></h2>
+              <h2 className="p-title">
+                <span>Plane Bomber</span>
+              </h2>
               <h4 className="p-stack">Vanilla Javascript</h4>
               <h5 className="p-desc">
                 Destroy 10 targets as quickly as possible with the least amount
@@ -156,7 +165,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <LanguageIcon fontSize="large" />
+                    <LanguageIcon className="actual-icon" />
                   </a>
                 </div>
                 <div className="icon">
@@ -164,8 +173,9 @@ const Projects = () => {
                     href="https://github.com/DavidWendtNJIT/Plane-Bomber-game"
                     target="_blank"
                     rel="noreferrer"
+                    
                   >
-                    <GitHubIcon fontSize="large" />
+                    <GitHubIcon className="actual-icon" />
                   </a>
                 </div>
               </div>
