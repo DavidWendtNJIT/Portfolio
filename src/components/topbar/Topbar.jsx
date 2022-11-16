@@ -8,7 +8,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="top-logo">
-            Portfolio
+             David Wendt Portfolio
           </a>
           <div className="itemContainer">
             <a
