@@ -29,6 +29,7 @@
 
   @include for-size(phone) {
       font-size: 2em;
+      margin-bottom: 5%;
     }
 
   @include for-size(big-desktop) {

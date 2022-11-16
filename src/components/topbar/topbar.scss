@@ -10,6 +10,10 @@
   z-index: 3;
   transition: all 1s ease;
 
+  @include for-size(phone) {
+      height: 50px;
+    }
+
   .wrapper {
     padding: 0px 30px;
     height: 100%;
@@ -37,7 +41,7 @@
 
         @include for-size(phone) {
             font-size: 1.4em;
-            margin-right: 40px;
+            margin-right: 60px;
           }
       }
 

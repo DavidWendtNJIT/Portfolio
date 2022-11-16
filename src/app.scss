@@ -1,3 +1,5 @@
+@import "global.scss";
+
 .app {
   height: 100vh;
   overflow: hidden;
@@ -12,6 +14,12 @@
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
 
+    @include for-size(phone) {
+      scroll-snap-type: none;
+      height: calc(100vh - 50px);
+      top: 50px;
+    }
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -19,6 +27,10 @@
       >* {
       height: calc(100vh - 70px);
       scroll-snap-align: start;
+
+      @include for-size(phone) {
+          height: calc(100vh - 50px)
+        }
 
       // .hidden {
       //     opacity: 0;
