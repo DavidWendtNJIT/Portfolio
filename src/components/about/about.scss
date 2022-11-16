@@ -27,7 +27,7 @@
 }
 
 .a-right {
-  flex:1;
+  flex: 1;
 }
 
 .a-wrapper {
@@ -108,3 +108,16 @@
     text-indent: 30px;
   }
 }
+
+// .hidden {
+//   opacity: 0;
+//   filter: blur(5px);
+//   transform: translateX(-100%);
+//   transition: all 2s;
+// }
+
+// .show {
+//   opacity: 1;
+//   filter: blur(0);
+//   transform: translateX(0);
+// }
