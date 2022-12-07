@@ -15,6 +15,14 @@
         flex-direction: column;
         padding: 5px;
       }
+    @include for-size(tablet) {
+      flex-direction: column;
+      padding: 5px;
+    }
+    @include for-size(desktop) {
+      flex-direction: row;
+      padding: 5px;
+    }
 
 
     .title {
@@ -107,14 +115,19 @@
         }
         
         .img {
-          width: 100px;
-          height: 100px;
+          max-width: 150px;
+          width: auto;
+          height: 100%;
           margin: auto;
 
           @include for-size(phone) {
               width: 35px;
               height: 35px;
             }
+          @include for-size(tablet) {
+            width: 70px;
+            height: 70px;
+          }
 
           @include for-size(big-desktop) {
             width: 150px;
@@ -170,7 +183,9 @@
         }
         
         .right-img {
-          width: 800px;
+          width: auto;
+          height: 100%;
+          max-width: 50vw;
           margin: 5% 0 10% 0;
 
           @include for-size(phone) {
@@ -179,7 +194,9 @@
           }
 
           @include for-size(big-desktop) {
-            width: 90%;            
+            width: auto;
+            height: 100%;
+            max-width: 1200px;            
           }
         }
 
